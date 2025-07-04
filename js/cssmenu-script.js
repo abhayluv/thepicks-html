@@ -52,38 +52,38 @@
       });
    };
 })(jQuery),
-   (function (e) {
+(function (e) {
+   e(document).ready(function () {
       e(document).ready(function () {
-         e(document).ready(function () {
-            e("#cssmenu").menumaker({ title: "", format: "multitoggle" }), e("#cssmenu").prepend("<div id='menu-line'></div>");
-            var s,
-               n,
-               o,
-               l,
-               i = !1,
-               t = 0,
-               u = e("#cssmenu #menu-line");
-            e("#cssmenu > ul > li").each(function () {
-               e(this).hasClass("active") && ((s = e(this)), (i = !0));
-            }),
-               !1 === i && (s = e("#cssmenu > ul > li").first()),
-               (l = n = s.width()),
-               (o = t = s.position().left),
-               u.css("width", n),
-               u.css("left", t),
-               e("#cssmenu > ul > li").hover(
-                  function () {
-                     (s = e(this)), (n = s.width()), (t = s.position().left), u.css("width", n), u.css("left", t);
-                  },
-                  function () {
-                     u.css("left", o), u.css("width", l);
-                  }
-               );
-         });
+         e("#cssmenu").menumaker({ title: "", format: "multitoggle" }), e("#cssmenu").prepend("<div id='menu-line'></div>");
+         var s,
+            n,
+            o,
+            l,
+            i = !1,
+            t = 0,
+            u = e("#cssmenu #menu-line");
+         e("#cssmenu > ul > li").each(function () {
+            e(this).hasClass("active") && ((s = e(this)), (i = !0));
+         }),
+            !1 === i && (s = e("#cssmenu > ul > li").first()),
+            (l = n = s.width()),
+            (o = t = s.position().left),
+            u.css("width", n),
+            u.css("left", t),
+            e("#cssmenu > ul > li").hover(
+               function () {
+                  (s = e(this)), (n = s.width()), (t = s.position().left), u.css("width", n), u.css("left", t);
+               },
+               function () {
+                  u.css("left", o), u.css("width", l);
+               }
+            );
       });
-   })(jQuery),
-   $(window).scroll(function () {
-      $(this).scrollTop() > 150
-         ? ($(".stickyhead").addClass("headersticky"))
-         : ($(".stickyhead").removeClass("headersticky"));
    });
+})(jQuery)
+// $(window).scroll(function () {
+//    $(this).scrollTop() > 150
+//       ? ($(".stickyhead").addClass("headersticky"))
+//       : ($(".stickyhead").removeClass("headersticky"));
+// });

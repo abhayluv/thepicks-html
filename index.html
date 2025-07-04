@@ -7,6 +7,8 @@
       <link rel="shortcut icon" href="images/favicon.png" />
       <title>The Picks</title>
       <link href="css/bootstrap.css" rel="stylesheet" />
+      <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
       <link href="css/cssmenu-styles.css" rel="stylesheet" />
       <link href="css/style.css" rel="stylesheet" />
       <link href="css/responsive.css" rel="stylesheet" />
@@ -15,7 +17,69 @@
       <div class="menu-overlay"></div>
       <div id="scroll-to-top"></div>
 
-      <header class="header header-light stickyhead">
+      <header class="hedcontainer header-light stickyhead">
+         <div class="Head-Bottom-Border navesticky sticky">
+            <div class="container">
+               <div class="headerdflex d-flex align-items-center">
+                  <div class="hedlogo"><a href="index.html"><img src="images/logo.png" alt="" /></a> </div>
+                  <div class="hedright me-auto">
+                     <div id="cssmenu">
+                        <ul>
+                           <li>
+                              <a href="#">Sports</a>
+                              <ul>
+                                 <li><a href="#">NFL</a></li>
+                                 <li><a href="#">NBA</a></li>
+                                 <li><a href="#">MLB</a></li>
+                                 <li><a href="#">MLB</a></li>
+                                 <li><a href="#">NHL</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#">News</a>
+                              <ul>
+                                 <li><a href="#">News 1</a></li>
+                                 <li><a href="#">News 2</a></li>
+                                 <li><a href="#">News 3</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="#">Promotions</a></li>
+                           <li><a href="#">Sweepstakes</a></li>
+                           <li><a href="#">Dfs</a></li>
+                           <li><a href="#">Casino</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="header-right">
+                     <div class="language-select">
+                        <div class="dropdown">
+                           <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                 <span class="flag-icon flag-icon-us"></span>
+                           </button>
+                           
+                           <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                                 <li><a class="dropdown-item" href="#" data-lang="us">
+                                    <span class="flag-icon flag-icon-us"></span>
+                                 </a></li>
+                                 <li><a class="dropdown-item" href="#" data-lang="fr">
+                                    <span class="flag-icon flag-icon-fr"></span>
+                                 </a></li>
+                                 <li><a class="dropdown-item" href="#" data-lang="de">
+                                    <span class="flag-icon flag-icon-de"></span>
+                                 </a></li>
+                           </ul>
+                        </div>
+                     </div>
+                     <a href="#" class="btn btn-light"><img src="images/login-icon.svg" alt=""></a>
+                     <a class="btn" href="#">Premium</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <!-- <header class="header header-light stickyhead">
          <div class="container">
             <div class="d-flex align-items-center">
                <a class="hedlogo" href="index.html"><img src="images/logo.png" alt="logo" /></a>
@@ -47,10 +111,34 @@
                      </div>
                   </div>
                </div>
-               <a class="btn" href="#">Premium</a>
+
+               <div class="header-right">
+                  <div class="language-select">
+                     <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown"
+                                 data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="flag-icon flag-icon-us"></span>
+                        </button>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                              <li><a class="dropdown-item" href="#" data-lang="us">
+                                 <span class="flag-icon flag-icon-us"></span>
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" data-lang="fr">
+                                 <span class="flag-icon flag-icon-fr"></span>
+                              </a></li>
+                              <li><a class="dropdown-item" href="#" data-lang="de">
+                                 <span class="flag-icon flag-icon-de"></span>
+                              </a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <a href="#" class="btn btn-light"><img src="images/login-icon.svg" alt=""></a>
+                  <a class="btn" href="#">Premium</a>
+               </div>
             </div>
          </div>
-      </header>
+      </header> -->
 
       <div class="container py-40">
          <div class="row">
@@ -71,12 +159,17 @@
                   </div>
                </div>
 
-               <div class="best-batting-offer my-35">
+               <div class="best-batting-offer my-35 position-relative">
                   <div class="main-title text-uppercase mb-20">Best Betting Offers</div>
 
-                  <div class="offer-boxes">
-                     <div class="row">
-                        <div class="col-lg-4">
+                  <div class="module-pagination">
+                     <div class="swiper-button-prev swiper-button-prev1"></div>
+                     <div class="dash-line"></div>
+                     <div class="swiper-button-next swiper-button-next1"></div>
+                  </div>
+                  <div class="swiper offerSlider">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                            <div class="offer-box">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-1.png" alt=""></div>
@@ -118,7 +211,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="swiper-slide">
                            <div class="offer-box">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-2.png" alt=""></div>
@@ -160,7 +253,133 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="swiper-slide">
+                           <div class="offer-box">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-3.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="offer-box">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-1.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="offer-box">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-2.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
                            <div class="offer-box">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-3.png" alt=""></div>
@@ -212,7 +431,7 @@
                   <div class="prediction-boxes">
                      <div class="row">
                         <div class="col-lg-3">
-                           <div class="prediction-box">
+                           <div class="prediction-box soccor-box">
                               <div class="pred-main-img">
                                  <img src="images/prediction/p-1.jpg" alt="">
                                  <div class="tag-label">SOCCER</div>
@@ -228,10 +447,10 @@
                         </div>
                         
                         <div class="col-lg-3">
-                           <div class="prediction-box">
+                           <div class="prediction-box nfl-box">
                               <div class="pred-main-img">
                                  <img src="images/prediction/p-1.jpg" alt="">
-                                 <div class="tag-label">SOCCER</div>
+                                 <div class="tag-label">NFL</div>
                               </div>
                               <div class="pred-detail">
                                  <h3>Eagles vs Cowboys: NFC East Clash</h3>
@@ -244,10 +463,10 @@
                         </div>
                         
                         <div class="col-lg-3">
-                           <div class="prediction-box">
+                           <div class="prediction-box wnba-box">
                               <div class="pred-main-img">
                                  <img src="images/prediction/p-1.jpg" alt="">
-                                 <div class="tag-label">SOCCER</div>
+                                 <div class="tag-label">WNBA</div>
                               </div>
                               <div class="pred-detail">
                                  <h3>Eagles vs Cowboys: NFC East Clash</h3>
@@ -260,10 +479,10 @@
                         </div>
                         
                         <div class="col-lg-3">
-                           <div class="prediction-box">
+                           <div class="prediction-box horse-box">
                               <div class="pred-main-img">
                                  <img src="images/prediction/p-1.jpg" alt="">
-                                 <div class="tag-label">SOCCER</div>
+                                 <div class="tag-label">HORSE RACING</div>
                               </div>
                               <div class="pred-detail">
                                  <h3>Eagles vs Cowboys: NFC East Clash</h3>
@@ -276,10 +495,10 @@
                         </div>
                         
                         <div class="col-lg-3">
-                           <div class="prediction-box">
+                           <div class="prediction-box ncaa-box">
                               <div class="pred-main-img">
                                  <img src="images/prediction/p-1.jpg" alt="">
-                                 <div class="tag-label">SOCCER</div>
+                                 <div class="tag-label">NCAA</div>
                               </div>
                               <div class="pred-detail">
                                  <h3>Eagles vs Cowboys: NFC East Clash</h3>
@@ -292,10 +511,10 @@
                         </div>
                         
                         <div class="col-lg-3">
-                           <div class="prediction-box">
+                           <div class="prediction-box mlb-box">
                               <div class="pred-main-img">
                                  <img src="images/prediction/p-1.jpg" alt="">
-                                 <div class="tag-label">SOCCER</div>
+                                 <div class="tag-label">MLB</div>
                               </div>
                               <div class="pred-detail">
                                  <h3>Eagles vs Cowboys: NFC East Clash</h3>
@@ -308,7 +527,7 @@
                         </div>
                         
                         <div class="col-lg-3">
-                           <div class="prediction-box">
+                           <div class="prediction-box dark-red-box">
                               <div class="pred-main-img">
                                  <img src="images/prediction/p-1.jpg" alt="">
                                  <div class="tag-label">SOCCER</div>
@@ -538,12 +757,18 @@
                   </div>
                </div>
 
-               <div class="best-batting-offer my-35">
+               <div class="best-batting-offer my-35 position-relative">
                   <div class="main-title text-uppercase mb-20">Casino Offers</div>
 
-                  <div class="offer-boxes">
-                     <div class="row">
-                        <div class="col-lg-4">
+                  <div class="module-pagination">
+                     <div class="swiper-button-prev swiper-button-prev2"></div>
+                     <div class="dash-line"></div>
+                     <div class="swiper-button-next swiper-button-next2"></div>
+                  </div>
+
+                  <div class="swiper casinoSlider">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                            <div class="offer-box lightblue-bg shadow-none">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-1.png" alt=""></div>
@@ -585,7 +810,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="swiper-slide">
                            <div class="offer-box lightblue-bg shadow-none">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-2.png" alt=""></div>
@@ -627,7 +852,133 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="swiper-slide">
+                           <div class="offer-box lightblue-bg shadow-none">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-3.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="offer-box lightblue-bg shadow-none">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-1.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="offer-box lightblue-bg shadow-none">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-2.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
                            <div class="offer-box lightblue-bg shadow-none">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-3.png" alt=""></div>
@@ -673,12 +1024,18 @@
                   </div>
                </div>
                
-               <div class="best-batting-offer my-35">
-                  <div class="main-title text-uppercase mb-20">Casino Offers</div>
+               <div class="best-batting-offer my-35 position-relative">
+                  <div class="main-title text-uppercase mb-20">Sweepstake Offers</div>
 
-                  <div class="offer-boxes">
-                     <div class="row">
-                        <div class="col-lg-4">
+                  <div class="module-pagination">
+                     <div class="swiper-button-prev swiper-button-prev3"></div>
+                     <div class="dash-line"></div>
+                     <div class="swiper-button-next swiper-button-next3"></div>
+                  </div>
+
+                  <div class="swiper sweepSlider">
+                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
                            <div class="offer-box lightred-bg shadow-none">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-1.png" alt=""></div>
@@ -720,7 +1077,7 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="swiper-slide">
                            <div class="offer-box lightred-bg shadow-none">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-2.png" alt=""></div>
@@ -762,7 +1119,133 @@
                               </div>
                            </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="swiper-slide">
+                           <div class="offer-box lightred-bg shadow-none">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-3.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="offer-box lightred-bg shadow-none">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-1.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
+                           <div class="offer-box lightred-bg shadow-none">
+                              <div class="d-flex align-items-center justify-content-between">
+                                 <div class="offer-company-logo"><img src="images/company/com-2.png" alt=""></div>
+                                 <div class="company-rating">
+                                    <div class="company-rating-title">Rating</div>
+                                    <div class="company-star">
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star yellow-star"></i>
+                                       <i class="ti ti-star"></i>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <h3>Up to $1,500 Back if You Don't Win</h3>
+                              <div class="check-box">
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Extensive Bet-Builder</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fantastic Promotions</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>Fun Social Media Content</h4>
+                                 </div>
+                                 <div class="check-it">
+                                    <div class="check-mark"><img src="images/check-white.svg" alt=""></div>
+                                    <h4>New Bookmaker</h4>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="btn-grp">
+                                 <a href="#" class="btn">CLAIM OFFER</a>
+                                 <a href="#" class="btn btn-primary">Read Review</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="swiper-slide">
                            <div class="offer-box lightred-bg shadow-none">
                               <div class="d-flex align-items-center justify-content-between">
                                  <div class="offer-company-logo"><img src="images/company/com-3.png" alt=""></div>
@@ -825,12 +1308,220 @@
 
                </div>
 
+               <div class="faq-sec my-35">
+                  <div class="main-title text-uppercase mb-20">Frequently Asked Questions</div>
+               </div>
+
             </div>
-            <div class="col-xl-3 col-lg-4"></div>
+
+            <div class="col-xl-3 col-lg-4">
+
+               <div class="daily-picks-box primary-bg shadow-none sidebar-box mb-30">
+                  <div class="box-blue-title mt-2">
+                     <div class="red-underline">Free Daily Picks</div>
+                  </div>
+                  <div class="daily-picks-content">
+                     <p>Subscribe to receive exclusive betting tips and predictions directly to your inbox.</p>
+
+                     <form>
+                        <div class="mb-2">
+                           <input type="email" id="sidebar-email" class="form-control" placeholder="Your Email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                           <input type="tel" id="sidebar-ph-number" class="form-control" placeholder="Phone Number (optional)">
+                        </div>
+                        <button type="submit" class="btn w-100">SUBSCRIBE NOW</button>
+                        <div class="my-3 form-check">
+                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                           <label class="form-check-label" for="exampleCheck1">By subscribing, you agree to our terms and privacy policy. You can unsubscribe aat any time.</label>
+                        </div>
+                     </form>
+
+                  </div>
+               </div>
+
+               <div class="side-ad-box mb-30">
+                  <img class="side-ad-img-bg" src="images/ad-img.jpg" alt="">
+                  <img class="side-ad-img" src="images/ad-logo.jpg" alt="">
+                  <h4>Bet $10 Get $30 In Free Bets</h4>
+                  <div class="btn">JOIN NOW</div>
+               </div>
+
+               <div class="upcoming-event-box sidebar-box mb-30">
+                  <div class="box-blue-title">
+                     <div>Upcoming Events</div>
+                  </div>
+                  <div class="event-box striped-li">
+                     <ul>
+                        <li>
+                           <div class="event-row-1 ncaa-box d-flex justify-content-between w-100">
+                              <div class="tag-label">NFL</div>
+                              <div class="date-more">
+                                 <span>Today, 8:15 PM ET</span>
+                                 <a href="#" class="view-more-link">View More</a>
+                              </div>
+                           </div>
+                           <div class="event-row-2 position-relative d-flex justify-content-between align-items-center w-100">
+                              <div class="team-name-logo">
+                                 <img src="images/team-logo/ravens.svg" alt="">
+                                 <div class="team-name">Ravens</div>
+                              </div>
+                              <div class="vs-icon"><img src="images/vs-icon.svg" alt=""></div>
+                              <div class="team-name-logo-reverse">
+                                 <div class="team-name">Bengals</div>
+                                 <img src="images/team-logo/bengals.svg" alt="">
+                              </div>
+                           </div>
+                           
+                        </li>
+                        
+                        <li>
+                           <div class="event-row-1 d-flex justify-content-between w-100">
+                              <div class="tag-label">NFL</div>
+                              <div class="date-more">
+                                 <span>Today, 8:15 PM ET</span>
+                                 <a href="#" class="view-more-link">View More</a>
+                              </div>
+                           </div>
+                           <div class="event-row-2 position-relative d-flex justify-content-between align-items-center w-100">
+                              <div class="team-name-logo">
+                                 <img src="images/team-logo/ravens.svg" alt="">
+                                 <div class="team-name">Ravens</div>
+                              </div>
+                              <div class="vs-icon"><img src="images/vs-icon.svg" alt=""></div>
+                              <div class="team-name-logo-reverse">
+                                 <div class="team-name">Bengals</div>
+                                 <img src="images/team-logo/bengals.svg" alt="">
+                              </div>
+                           </div>
+                           
+                        </li>
+                        
+                        <li>
+                           <div class="event-row-1 wnba-box d-flex justify-content-between w-100">
+                              <div class="tag-label">NFL</div>
+                              <div class="date-more">
+                                 <span>Today, 8:15 PM ET</span>
+                                 <a href="#" class="view-more-link">View More</a>
+                              </div>
+                           </div>
+                           <div class="event-row-2 position-relative d-flex justify-content-between align-items-center w-100">
+                              <div class="team-name-logo">
+                                 <img src="images/team-logo/ravens.svg" alt="">
+                                 <div class="team-name">Ravens</div>
+                              </div>
+                              <div class="vs-icon"><img src="images/vs-icon.svg" alt=""></div>
+                              <div class="team-name-logo-reverse">
+                                 <div class="team-name">Bengals</div>
+                                 <img src="images/team-logo/bengals.svg" alt="">
+                              </div>
+                           </div>
+                           
+                        </li>
+                        
+                        <li>
+                           <div class="event-row-1 soccor-box d-flex justify-content-between w-100">
+                              <div class="tag-label">NFL</div>
+                              <div class="date-more">
+                                 <span>Today, 8:15 PM ET</span>
+                                 <a href="#" class="view-more-link">View More</a>
+                              </div>
+                           </div>
+                           <div class="event-row-2 position-relative d-flex justify-content-between align-items-center w-100">
+                              <div class="team-name-logo">
+                                 <img src="images/team-logo/ravens.svg" alt="">
+                                 <div class="team-name">Ravens</div>
+                              </div>
+                              <div class="vs-icon"><img src="images/vs-icon.svg" alt=""></div>
+                              <div class="team-name-logo-reverse">
+                                 <div class="team-name">Bengals</div>
+                                 <img src="images/team-logo/bengals.svg" alt="">
+                              </div>
+                           </div>
+                           
+                        </li>
+                        
+                        <li>
+                           <div class="event-row-1 horse-box d-flex justify-content-between w-100">
+                              <div class="tag-label">NFL</div>
+                              <div class="date-more">
+                                 <span>Today, 8:15 PM ET</span>
+                                 <a href="#" class="view-more-link">View More</a>
+                              </div>
+                           </div>
+                           <div class="event-row-2 position-relative d-flex justify-content-between align-items-center w-100">
+                              <div class="team-name-logo">
+                                 <img src="images/team-logo/ravens.svg" alt="">
+                                 <div class="team-name">Ravens</div>
+                              </div>
+                              <div class="vs-icon"><img src="images/vs-icon.svg" alt=""></div>
+                              <div class="team-name-logo-reverse">
+                                 <div class="team-name">Bengals</div>
+                                 <img src="images/team-logo/bengals.svg" alt="">
+                              </div>
+                           </div>
+                           
+                        </li>
+                        
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="latest-odd-box sidebar-box mb-30">
+                  <div class="box-blue-title">
+                     <div>Latest Odds</div>
+                     <div class="title-extra-info mt-1">
+                        <h6>Chiefs vs Ravens</h6>
+                        <div class="tag-label">NFL</div>
+                     </div>
+                  </div>
+                  <div class="odd-box striped-li">
+                     <ul>
+                        <li>
+                           <div class="odd-title">Chiefs Moneyline</div>
+                           <div class="odd-value">+135</div>
+                        </li>
+                        <li>
+                           <div class="odd-title">Ravens Moneyline</div>
+                           <div class="odd-value">-155</div>
+                        </li>
+                        <li>
+                           <div class="odd-title">Chiefs +3.5</div>
+                           <div class="odd-value">+110</div>
+                        </li>
+                        <li>
+                           <div class="odd-title">Ravens -3.5</div>
+                           <div class="odd-value">+135</div>
+                        </li>
+                        <li>
+                           <div class="odd-title">Over 49.5</div>
+                           <div class="odd-value">+135</div>
+                        </li>
+                        <li>
+                           <div class="odd-title">Under 49.5</div>
+                           <div class="odd-value">+110</div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="sidebar-last-btn">
+                     <a href="#" class="btn">Bet Now</a>
+                  </div>
+               </div>
+
+               <div class="sidebar-follow-us sidebar-box mb-30">
+                  <div class="box-blue-title">Follow Us</div>
+                  <div class="social-icons navbar p-0">
+                        <div class="navbar-nav flex-row">
+                           <a class="nav-link" href="#"><img src="images/social-icons/x.svg" alt=""></a>
+                           <a class="nav-link" href="#"><img src="images/social-icons/fb.svg" alt=""></a>
+                           <a class="nav-link" href="#"><img src="images/social-icons/insta.svg" alt=""></a>
+                           <a class="nav-link" href="#"><img src="images/social-icons/youtube.svg" alt=""></a>
+                        </div>
+                     </div>
+               </div>
+            </div>
          </div>
       </div>
-
-      
 
       <footer>
          <div class="container">
@@ -842,8 +1533,8 @@
                      <div class="social-icons navbar p-0">
                         <div class="navbar-nav flex-row">
                            <a class="nav-link" href="#"><img src="images/social-icons/x.svg" alt=""></a>
-                           <a class="nav-link" href="#"><img src="images/social-icons/facebook.svg" alt=""></a>
-                           <a class="nav-link" href="#"><img src="images/social-icons/instagram.svg" alt=""></a>
+                           <a class="nav-link" href="#"><img src="images/social-icons/fb.svg" alt=""></a>
+                           <a class="nav-link" href="#"><img src="images/social-icons/insta.svg" alt=""></a>
                            <a class="nav-link" href="#"><img src="images/social-icons/youtube.svg" alt=""></a>
                         </div>
                      </div>
@@ -920,8 +1611,11 @@
       </footer>
 
       <script src="js/jquery-3.6.0.js"></script>
-      <script src="js/bootstrap.js"></script>
-      <script src="js/cssmenu-script.js"></script>      
+      <script src="js/bootstrap.bundle.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/cssmenu-script.js"></script>
+      <script src="js/custom.js"></script>
+      
      
       <script>
          var btn = $("#scroll-to-top");
@@ -938,6 +1632,91 @@
             e.preventDefault();
             $("html, body").animate({ scrollTop: 0 }, "400");
          });
+
+         var swiper = new Swiper('.offerSlider', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            // Navigation arrows
+            navigation: {
+               nextEl: '.swiper-button-next1',
+               prevEl: '.swiper-button-prev1',
+            },
+
+            breakpoints: {
+               768: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+               },
+               1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+               },
+               1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+               },
+            },
+         });
+         
+         var swiper2 = new Swiper('.casinoSlider', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            // Navigation arrows
+            navigation: {
+               nextEl: '.swiper-button-next2',
+               prevEl: '.swiper-button-prev2',
+            },
+
+            breakpoints: {
+               768: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+               },
+               1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+               },
+               1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+               },
+            },
+         });
+         
+         var swiper3 = new Swiper('.sweepSlider', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+
+            // Navigation arrows
+            navigation: {
+               nextEl: '.swiper-button-next3',
+               prevEl: '.swiper-button-prev3',
+            },
+
+            breakpoints: {
+               768: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+               },
+               1024: {
+                  slidesPerView: 2,
+                  spaceBetween: 30,
+               },
+               1200: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+               },
+            },
+         });
+
       </script>
    </body>
 </html>
