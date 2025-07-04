@@ -1,0 +1,70 @@
+@media(max-width:1440px){ 
+   
+   .listinglightbluebg::before {height: 345px;}
+   .offer-com-box {min-width: 150px;}
+   .innerpagebanner h1 {font-size: 55px;}
+
+
+}
+@media(max-width:1199px){ 
+
+   .bonus-topfeature-sec {flex-wrap: wrap;}
+   .boxlist-paddd {padding-right: 20px;}
+   .listinglightbluebg::before {display: none;}
+   .innerpagebanner h1 {font-size: 50px;}
+   footer .site-links::after {right: 0;}
+   footer .site-details {padding: 20px;}
+   footer .col-md-6 {width: 33.3333%;}
+   footer .col-md-6:first-child {order: 1; width: 100%;}
+   footer .site-details::before {left: 0; right: inherit; width: 100%;}
+
+}
+
+@media(max-width:991px){ 
+   
+   .top-fet-offer {width: 100%;}
+   .paynow-listbg {width: auto; padding: 15px;}
+   .oper-list-price {padding-left: 0px;}
+   .list-bonus-box h5 {margin-bottom: 7px;}
+   .offer-boxes .col-lg-4 {margin-bottom: 30px;}
+   .offer-boxes .col-lg-4:last-child {margin-bottom: 0px;}
+   .innerpagebanner h1 {font-size: 40px;}
+
+
+}
+
+@media(max-width:767px){ 
+
+   #scroll-to-top { width: 35px; height: 35px; bottom: 20px; right: 15px; }
+
+   .boxlist-flex {flex-wrap: wrap; }
+   .offer-com-box {width: 100%;}
+   .boxlist-paddd {padding:40px 20px 20px 20px;}
+   .op-list-count {height: 30px; min-width: 30px; border-radius: 10px 0px 15px 0px; font-size: 16px;}
+   .operator-bg {flex-wrap: wrap; border: 4px solid var(--primary);}
+   .paynow-listbg {width: 100%;}
+   .offer-com-box h3 {font-size: 24px;}
+   .innerpagebanner h1 {font-size: 35px;}
+   .operator-bg:last-child {margin-bottom: 0px;}
+   footer .col-md-6 {width: 50%;}
+   footer .col-md-6:first-child {order: 1; width: 50%;}
+   footer .col-md-6:nth-child(3) .site-links::after {display: none;}
+   .innerpagebanner {padding: 30px 0px;}
+
+}
+
+@media(max-width:575px){
+
+   footer .col-md-6 {width: 100%;}
+   footer .col-md-6:first-child {order: 1; width: 100%;}
+   footer .site-links::after {display: none;}
+   footer .site-links {margin: 0px 0px 20px 0px;}
+   footer {padding-top: 30px;}
+
+}
+
+@media(max-width: 475px) {
+
+   
+
+}
