@@ -14,8 +14,13 @@
    --text-dark: #374151;
    --text-light: #6B7280;
 
-   --for-demo: #000;
-   --redbgpart:#ff0000;
+   --primary-white:#ffffff;
+   --primary-black:#000000;
+
+   --ft-white:#ffffff; 
+   --ft-black:#000000; 
+
+   --lightbluebg:#d3e4f7;
 
 }
 
@@ -28,7 +33,7 @@ body {
    background-color: #F3F3F9;
    font-size: 16px;
    line-height: 24px;
-   color: #000;
+   color: var(--text-dark);
    overflow-x: hidden;
 }
 
@@ -79,10 +84,13 @@ body {
    background: var(--secondary-light);
    color: #fff;
 }
-.btn-primary { background: var(--primary); }
-.btn-primary:focus, .btn-primary:hover { background: var(--primary-light); }
+.btn-primary { background: var(--primary); border: 1px solid var(--primary);}
+.btn-primary:focus, .btn-primary:hover { background: var(--primary-light); border-color: var(--primary-light);}
 
-.btn-grp { display: grid; gap: 10px; }
+.btn-outline-primary { background: var(--primary-white); border: 1px solid var(--primary); color: var(--primary); }
+.btn-outline-primary:focus, .btn-outline-primary:hover { background: var(--primary); border-color: var(--primary); color: var(--ft-white);}
+
+.btn-grp { display: grid; gap: 8px; }
 
 .btn-link {
    font-size: 15px;
@@ -144,6 +152,15 @@ body {
 
 .ti-star:before { content: "\f6a6"; }
 .ti-chevron-right::before { content: "\ea61"; }
+.ti-calendar-event::before { content: "\ea52"; }
+.ti-shield-check::before { content: "\eb22"; }
+.ti-chevron-right::before { content: "\ea61"; }
+.ti-chevron-left::before { content: "\ea60"; }
+.ti-gift::before { content: "\eb68"; }
+
+
+
+
 
 .nav-link, a {
    text-decoration: none;
@@ -164,7 +181,7 @@ h1, h2, h3, h4, h5, h6 {
    padding: 0;
    line-height: 1.2;
    /* text-transform: none; */
-   font-family: var(--font-primary-bk);
+   color: #000;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
    color: inherit;
@@ -231,11 +248,7 @@ header .header-contain { display: flex; align-items: center; }
 #cssmenu > ul > li > a.active { color: var(--secondary); }
 
 header.stickyhead { position: fixed; top: 0px; width: 100%; z-index: 999; }
-header.headersticky {
-   background-color: rgba(255, 255, 255, 0.95);
-   padding: 12px 0;
-}
-header.headersticky .hedlogo { height: 70px; }
+
 
 /* header ends */
 
@@ -457,7 +470,7 @@ footer .footer-bottom::before {
 .news-box,
 .prediction-box,
 .offer-box {
-   padding: 25px 20px 20px;
+   padding: 20px 20px 20px;
    background: #FFFFFF;
    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
    border-radius: 15px;
@@ -490,7 +503,7 @@ footer .footer-bottom::before {
 
 .check-box {
    display: grid;
-   gap: 12px;
+   gap: 6px;
    padding-bottom: 5px;
 }
 .check-box .check-it {
@@ -557,7 +570,70 @@ footer .footer-bottom::before {
 
 
 /*---------PSl-04-07------------*/
+p:last-child {margin-bottom: 0px;}
+.sectionPTB {padding: 40px 0px;}
+.innerpagebanner {padding: 40px 0px; color: var(--text-dark); background-color: var(--lightbluebg);}
+.innerpagebanner .breadcrumb {margin-bottom: 10px; }
+.innerpagebanner .breadcrumb li a {font-size: 16px; color: var(--text-light);}
+.innerpagebanner .breadcrumb li a:hover {color: var(--text-dark);}
+.innerpagebanner h1 {font-size: 60px; font-weight: 700; line-height: normal;}
+.banner-info-cont p {margin-bottom: 0px;}
+.banner-info-datelist {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
+.banner-info-date {display: inline-flex; align-items: center; justify-content: center; padding: 4px 10px; gap: 6px; border-radius: 4px; background-color: #c1daf6; font-size: 14px;}
+.banner-info-date i {flex-shrink: 0;}
+.breadcrumb-item + .breadcrumb-item::before {content: "\ea61"; font-family: "tabler-icons" !important;}
 
+.common-title-cont .main-title {border-bottom: none; padding-bottom: 7px;}
+.common-title-cont {border-bottom: 1px solid var(--white-line); padding-bottom: 20px; margin-bottom: 20px;}
+.offer-box hr {margin: 10px 0;}
+.bg-white {background-color: var(--primary-white);}
+.complete-section {}
+.list-sort-cate {display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap;}
+.sort-cate, .cate-list {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
+.com-selectbox {padding:7px 10px; border: 1px solid var(--white-line); color: var(--text-light); border-radius: 7px; font-size: 14px; line-height: normal; cursor: pointer; background: url(../images/chevron-down-gray.svg) no-repeat right 6px center;  -webkit-appearance: none; -moz-appearance: none;  background-size: 15px;  var(--primary-white); padding-right: 25px; width: auto;}
 
+.list-sort-cate {margin-bottom: 30px;}
+.operator-bg {background-color: var(--primary);  border-radius: 20px;  position: relative; border-left: 5px solid var(--primary); min-height: 194px; overflow: hidden; display: flex; justify-content: space-between; margin-bottom: 20px;}
+.op-list-count {position: absolute; left: 0px; top: 0px; color: var(--ft-white); font-size: 25px; font-weight: 700; font-style: italic; display: flex; align-items: center; justify-content: center; height: 45px; min-width: 40px; background-color: var(--primary); border-radius:13px 0px 20px 0px; z-index: 1;}
 
+.paynow-listbg { padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--ft-white); width: 250px; gap: 7px; flex-shrink:0; padding-left: 50px;}
+.paynow-listbg .btn {min-width: 140px; }
 
+a.read-review-link {font-size: 13px; color: #fff; border-bottom: 1px dotted #fff;}
+a.read-review-link:hover {color: var(--lightbluebg); text-decoration: none;}
+
+.listinglightbluebg {flex: 1; background-color: #e5edf9;  position: relative;}
+.listinglightbluebg::before{ position: absolute;right: -30px;top: 0;bottom: 0;margin: auto;background-color: #e5edf9;width: 149px;height: 319px;z-index: 1;content: "";border-radius: 0 155px 155px 0;}
+.boxlist-paddd {padding: 30px 30px 30px 60px; position: relative; z-index: 1; width: 99%;}
+
+.boxlist-flex {display: flex; align-items: flex-start; gap: 20px;}
+.offer-com-box {min-width: 200px; flex-shrink: 0;}
+.offer-com-box h3 {font-size: 30px; font-weight: 700; margin-bottom: 10px;}
+.offer-company-logo {max-width: 150px; margin-bottom: 12px;}
+.offer-company-logo img {max-width: 150px; max-height: 50px;}
+.offer-com-box .company-rating-title {font-size: 15px; font-weight: 500; line-height: normal; margin-bottom: 2px;}
+.offer-com-box .company-star {font-size: 14px; display: flex; gap: 0px;}
+.offer-com-box .company-star i {color: #BDBDBD;}
+.offer-com-box .company-star i.yellow-star {color: #FFA500;}
+
+.bonus-topfeature-sec {display: flex; align-items: flex-start; gap: 15px; width: 100%;}
+.list-bonus-box {width: 100%; max-width: 220px;}
+.list-bonus-box h5 {font-size: 20px; font-weight: 500; color: var(--secondary); margin-bottom: 15px; display: flex; align-items: center; gap: 6px;}
+.oper-list-price {padding-left: 25px; font-size: 15px;}
+.oper-list-price h6 {margin-bottom: 2px; font-size: 16px; font-weight: 500;}
+.oper-list-price p:last-child {margin-bottom: 0px;}
+.topfeatures-part {width: 100%;}
+.topfeatures-part h5 {font-size: 20px; font-weight: 500; color: var(--primary); margin-bottom: 15px;}
+.top-feat-flex {display: flex; margin: 0px -7px 0px -7px; flex-wrap: wrap; }
+.top-fet-offer {width: 50%; padding-left: 7px; padding-right: 7px; margin-bottom: 13px; display: flex; align-items: flex-start; gap: 10px; color: var(--ft-black); line-height: normal;}
+.top-fet-offer .check-mark {background: var(--primary); border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center;  padding-left: 2px; margin-top: 0px; flex-shrink: 0;}
+
+.product-rating-review {display: flex; align-items: center; gap: 30px; margin-bottom: 20px;}
+.product-rating-review .offer-company-logo {max-width: 150px; margin-bottom: 0px;}
+.product-rating-review .offer-company-logo img {max-width: 150px; max-height: 40px;}
+
+.verified-rev {display: inline-flex; padding: 5px 8px; line-height: normal; border-radius: 4px; font-size: 12px; color: #166534; font-weight: 500; background-color: #DCFCE7;}
+.company-star i {color: #BDBDBD;}
+.company-star i.yellow-star {color: #FFA500;}
+.review-left-banner-cont .company-rating {line-height: normal;}
+.review-left-banner-cont .company-rating-title {font-size: 15px; font-weight: 500; line-height: normal; margin-bottom: 0px;}
