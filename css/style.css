@@ -13,6 +13,8 @@
    
    --text-dark: #374151;
    --text-light: #6B7280;
+
+   --for-demo: #000;
 }
 
 body, html { scroll-behavior: smooth; }
