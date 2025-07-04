@@ -15,6 +15,8 @@
    --text-light: #6B7280;
 
    --for-demo: #000;
+   --redbgpart:#ff0000;
+
 }
 
 body, html { scroll-behavior: smooth; }
@@ -52,7 +54,9 @@ body {
    color: #fff;
    border-radius: 4px;
    letter-spacing: 0.2px;
+   
 }
+
 
 .btn {
    font-size: 15px;
@@ -549,3 +553,11 @@ footer .footer-bottom::before {
 }
 
 .content-sec p { font-size: 15px; }
+
+
+
+/*---------PSl-04-07------------*/
+
+
+
+
